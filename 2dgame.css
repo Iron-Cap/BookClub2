@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.game{
+    width: 540px;
+    height: 200px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: auto;
+    background-color: rgb(255, 157, 0);
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: rgb(5, 84, 16);
+    position:relative;
+    top: 150px;
+    
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#sun{
+    background-color: rgba(209, 185, 89, 0.838);
+    width:20px;
+    height: 20px;
+    top: -77px;
+    position: relative;
+    right: -500px;
+    animation: linear;
+    
+}
+#block{
+    background-color: rgb(96, 96, 96);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+
+#clouds{
+    background-color: rgb(255, 255, 255);
+    width:40px;
+    height: 20px;
+    position: relative;
+    top: -28px;
+    left: 100px;
+    animation: clouds 1s infinite linear;
+}
+
+
+
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -1px}
+}
+
+@keyframes clouds{
+    0%{left: 500px}
+    100%{left: -1px}
+}
+
+p{
+    text-align: center;
+}
+
+#t1 {
+
+    margin: auto;
+    width: 30%;
+    padding: 2%;
+
+}
